@@ -1,0 +1,217 @@
+/*Esto se aplicara a todos los documentos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*Estilo para la estructra basica*/
+
+body{
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header{
+    width: 100%;
+    height: 140px;
+    position: relative;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: #000000 1px solid;
+    z-index: 1;
+}
+
+header::before{
+    content: "";
+    position: absolute;
+    background:url(../Assets/Bannel.jpg);
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+header h1{
+    position: relative;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+}
+
+.estructura{
+    display: flex;
+    min-height: calc(100vh - 120px);
+}
+
+/*Estilos del Menu*/
+
+.menuinterno{
+    background-color: #939393;
+    width: 220px;
+    padding: 20px;
+}
+
+.menuinterno ul{
+    list-style: none;
+}
+
+.menuinterno h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.menuinterno li{
+    margin-bottom: 20px;
+}
+
+.menuinterno a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.7s;
+}
+
+.menuinterno a:hover{
+    background-color: #424242;
+    color: #ffffff;
+}
+
+/*Estilos para el contenido de la pagina*/
+/*Aqui se editaran a partir de ahora cada seccion individual de diseño para no afectar a la estructura principal*/
+
+.contenido{
+    list-style: none;
+    text-align: center;
+    flex: 1;
+    padding: 30px;
+    background-color: #ffffff;
+    border-left: 2px solid #000000;
+}
+
+.contenido h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contenido social-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;         
+}
+
+.caja{
+    list-style: none;
+    width: 100%;
+    height: auto;
+    border: 2px solid #00000000;
+    border-radius: 0px;
+    padding: 16px;
+    background-color: #ebebeb;
+    box-shadow: 0 4px 10px rgba(255, 254, 254, 0.1);
+    margin: 20px auto;
+    box-shadow:0 6px 18px rgba(56, 96, 188, 0.27);
+}
+
+/*Contenido dentro de contactos*/
+
+.links{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    color: #333;
+    font-weight: bold;
+}
+
+.links img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.links:hover{
+    scale: 1.1;
+    background-color: #6d6c6c59;
+    color: #020202;
+}
+
+/*Contenido dentro de formularios*/
+
+.pre-res{
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 8px solid #342f46;
+    background: #e4e3e3;
+    border-radius: 10px;
+}
+
+.pre-res h3{
+    margin-bottom: 10px;
+    color: #342f46;
+}
+
+label {
+    display: block;
+    text-align: left;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+label:hover {
+    color: #333;
+    font-weight: bold;
+    background-color: #d8d3d3b8;
+}
+
+.env{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #342f46;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.env:hover{
+    background-color: #2c2536;
+}
+
+/*Estilos para el pie de pagina*/
+
+footer{
+    background-color: #939393;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #000000;
+}
